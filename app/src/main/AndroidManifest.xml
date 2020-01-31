@@ -12,11 +12,6 @@
             android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-            <intent-filter>
                 <action android:name="info.guardianproject.panic.action.CONNECT"/>
                 <action android:name="info.guardianproject.panic.action.DISCONNECT"/>
 
