@@ -2,4 +2,6 @@
 <resources>
     <string name="settings_name">Panic Settings</string>
     <string name="settings_summary">Set up the response to an emergency panic trigger.</string>
+
+    <string name="panic_tile_label">Panic Trigger</string>
 </resources>
