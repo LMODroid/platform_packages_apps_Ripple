@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="panic_tile_label">Ενέργεια πανικού</string>
+    <string name="settings_summary">Ρυθμίστε την απόκριση σε μια ενέργεια πανικού έκτακτης ανάγκης.</string>
+    <string name="settings_name">Ρυθμίσεις πανικού</string>
+</resources>

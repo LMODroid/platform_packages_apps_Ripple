@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_summary">Sett foretagende å utføre ved utløsing av panikk.</string>
+    <string name="panic_tile_label">Panikkutløser</string>
+    <string name="settings_name">Panikkinnstillinger</string>
+</resources>

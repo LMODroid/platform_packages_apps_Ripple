@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="panic_tile_label">Bouton d’urgence</string>
+    <string name="settings_summary">Configurez la réponse à un déclenchement d’urgence.</string>
+    <string name="settings_name">Paramètres d’urgence</string>
+</resources>
