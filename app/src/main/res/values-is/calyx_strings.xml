@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="panic_tile_label">Neyðarviðbragð</string>
+    <string name="settings_summary">Setja upp viðbrögð við neyðarviðbragði.</string>
+    <string name="settings_name">Neyðarstillingar</string>
+</resources>

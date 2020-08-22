@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_name">Configuraciones de pánico</string>
+    <string name="settings_summary">Configurar la respuesta a un botón de emergencia.</string>
+    <string name="panic_tile_label">Botón de pánico</string>
+</resources>

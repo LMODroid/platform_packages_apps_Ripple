@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="panic_tile_label">Триггер паники</string>
+    <string name="settings_summary">Настройте реакцию на срабатывание аварийной паники.</string>
+    <string name="settings_name">Настройки паники</string>
+</resources>

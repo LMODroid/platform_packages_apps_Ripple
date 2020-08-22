@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="panic_tile_label">Gatilho de pânico</string>
+    <string name="settings_summary">Configure a resposta a um gatilho de pânico de emergência.</string>
+    <string name="settings_name">Configurações de pânico</string>
+</resources>

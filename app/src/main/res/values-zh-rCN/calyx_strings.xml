@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="panic_tile_label">恐慌警触器</string>
+    <string name="settings_summary">设置紧急恐慌警触器应对方式。</string>
+    <string name="settings_name">警报设置</string>
+</resources>
