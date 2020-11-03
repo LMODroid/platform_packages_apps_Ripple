@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="panic_tile_label">לחצן מצוקה</string>
+    <string name="settings_summary">הגדרת תגובה להפעלת לחצן חירום למצוקה.</string>
+    <string name="settings_name">הגדרות מצוקה</string>
+</resources>

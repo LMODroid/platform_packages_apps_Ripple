@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="panic_tile_label">Panik tetikleyici</string>
+    <string name="settings_summary">Acil durum panik tetikleyicisine yanıtı ayarlayın.</string>
+    <string name="settings_name">Panik ayarları</string>
+</resources>
