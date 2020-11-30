@@ -51,11 +51,11 @@ public class CountDownActivity extends Activity {
         } else {
             scale = displayMetrics.widthPixels;
         }
-        mCountDownNumber = (TextView) findViewById(R.id.countDownNumber);
+        mCountDownNumber = findViewById(R.id.countDownNumber);
         mCountDownNumber.setTextSize(((float) scale) * 0.45f / getResources().getDisplayMetrics().scaledDensity);
 
-        mTouchToCancel = (TextView) findViewById(R.id.tap_anywhere_to_cancel);
-        mCancelButton = (ImageView) findViewById(R.id.cancelButton);
+        mTouchToCancel = findViewById(R.id.tap_anywhere_to_cancel);
+        mCancelButton = findViewById(R.id.cancelButton);
 
         mCountDownAsyncTask = new CountDownAsyncTask();
 

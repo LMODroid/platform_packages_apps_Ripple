@@ -49,11 +49,11 @@ public class PanicActivity extends Activity implements OnTouchListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_panic);
 
-        mFrameRoot = (RelativeLayout) findViewById(R.id.frameRoot);
-        mTextHint = (TextView) findViewById(R.id.textHint);
-        mSwipeArrows = (ImageView) findViewById(R.id.swipe_arrows);
-        mRipples = (RippleDrawingView) findViewById(R.id.ripples);
-        mPanicSwipeButton = (ImageView) findViewById(R.id.panic_swipe_button);
+        mFrameRoot = findViewById(R.id.frameRoot);
+        mTextHint = findViewById(R.id.textHint);
+        mSwipeArrows = findViewById(R.id.swipe_arrows);
+        mRipples = findViewById(R.id.ripples);
+        mPanicSwipeButton = findViewById(R.id.panic_swipe_button);
         mPanicSwipeButton.setOnTouchListener(this);
 
         View btnCancel = findViewById(R.id.btnCancel);

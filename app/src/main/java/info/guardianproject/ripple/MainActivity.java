@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final Button gotItButton = (Button) findViewById(R.id.got_it);
+        final Button gotItButton = findViewById(R.id.got_it);
         final View introInstructions = findViewById(R.id.intro_instructions);
 
         if (prefs.getBoolean(GOT_IT_PREF, false)) {
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.addItemDecoration(new SimpleDividerItemDecoration(getApplicationContext()));
         recyclerView.setHasFixedSize(true); // does not change, except in onResume()
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -198,10 +198,10 @@ public class MainActivity extends AppCompatActivity {
         AppRowHolder(final View row) {
             super(row);
 
-            iconView = (ImageView) row.findViewById(R.id.iconView);
-            appLabelView = (TextView) row.findViewById(R.id.appLabel);
-            editableLabel = (TextView) row.findViewById(R.id.editableLabel);
-            onSwitch = (SwitchCompat) row.findViewById(R.id.on_switch);
+            iconView = row.findViewById(R.id.iconView);
+            appLabelView = row.findViewById(R.id.appLabel);
+            editableLabel = row.findViewById(R.id.editableLabel);
+            onSwitch = row.findViewById(R.id.on_switch);
             onClickListener = new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

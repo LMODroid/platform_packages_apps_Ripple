@@ -16,7 +16,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        ImageButton panicButton = (ImageButton) findViewById(R.id.panic_button);
+        ImageButton panicButton = findViewById(R.id.panic_button);
         panicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
