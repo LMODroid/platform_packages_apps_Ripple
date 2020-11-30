@@ -75,4 +75,16 @@
         </service>
     </application>
 
+    <queries>
+        <intent>
+            <action android:name="info.guardianproject.panic.action.CONNECT"/>
+        </intent>
+        <intent>
+            <action android:name="info.guardianproject.panic.action.DISCONNECT"/>
+        </intent>
+        <intent>
+            <action android:name="info.guardianproject.panic.action.TRIGGER"/>
+        </intent>
+    </queries>
+
 </manifest>
