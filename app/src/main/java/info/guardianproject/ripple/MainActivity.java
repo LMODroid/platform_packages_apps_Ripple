@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String GOT_IT_PREF = "gotItPref";
     private static final int CONNECT_RESULT = 0x01;
 
-    private String responders[];
+    private String[] responders;
     private Set<String> enabledResponders;
     private Set<String> respondersThatCanConnect;
     private ArrayList<CharSequence> appLabelList;
