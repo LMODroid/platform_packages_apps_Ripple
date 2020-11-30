@@ -24,16 +24,10 @@ public class ExitActivity extends Activity {
     public static void exitAndRemoveFromRecentApps(Activity activity) {
         Intent intent = new Intent(activity, ExitActivity.class);
 
-        if (Build.VERSION.SDK_INT < 11) {
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                    | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
-                    | Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        } else {
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                    | Intent.FLAG_ACTIVITY_CLEAR_TASK
-                    | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
-                    | Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        }
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
+                | Intent.FLAG_ACTIVITY_NO_ANIMATION);
 
         activity.startActivity(intent);
     }

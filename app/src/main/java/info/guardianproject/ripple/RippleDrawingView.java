@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -32,14 +31,12 @@ public class RippleDrawingView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        if (Build.VERSION.SDK_INT >= 11) {
-            float width = getWidth();
-            float x = width / 2;
-            float y = getHeight() * 0.92f;
-            canvas.drawCircle(x, y, mSize, mRippleOutsidePaint);
-            canvas.drawCircle(x, y, mSize - (width * 0.166666f), mRippleInsidePaint);
-            canvas.drawCircle(x, y, mSize - (width * 0.333333f), mRippleCenterPaint);
-        }
+        float width = getWidth();
+        float x = width / 2;
+        float y = getHeight() * 0.92f;
+        canvas.drawCircle(x, y, mSize, mRippleOutsidePaint);
+        canvas.drawCircle(x, y, mSize - (width * 0.166666f), mRippleInsidePaint);
+        canvas.drawCircle(x, y, mSize - (width * 0.333333f), mRippleCenterPaint);
     }
 
     public void setSize(float size) {

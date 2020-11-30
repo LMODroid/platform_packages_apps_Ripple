@@ -1,6 +1,5 @@
 package info.guardianproject.ripple;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -33,9 +32,6 @@ public class CountDownActivity extends Activity {
     private int mCountDown = 0xff;
     private boolean mTestRun;
 
-    // lint is failing to see that setOnSystemUiVisibilityChangeListener is wrapped in
-    // if (Build.VERSION.SDK_INT >= 11).
-    @TargetApi(11)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,23 +76,21 @@ public class CountDownActivity extends Activity {
 
         if (Build.VERSION.SDK_INT >= 16) {
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN);
-        } else if (Build.VERSION.SDK_INT >= 14) {
+        } else {
             window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         }
 
-        if (Build.VERSION.SDK_INT >= 11) {
-            frameRoot.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
-                @Override
-                public void onSystemUiVisibilityChange(int visibility) {
-                    /* If the nav bar comes back while the countdown is active,
-                       that means the user clicked on the screen. Showing the
-                       test dialog also triggers this, so filter on countdown */
-                    if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0 && mCountDown > 0) {
-                        cancel();
-                    }
+        frameRoot.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
+            @Override
+            public void onSystemUiVisibilityChange(int visibility) {
+                /* If the nav bar comes back while the countdown is active,
+                   that means the user clicked on the screen. Showing the
+                   test dialog also triggers this, so filter on countdown */
+                if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0 && mCountDown > 0) {
+                    cancel();
                 }
-            });
-        }
+            }
+        });
     }
 
     @Override
