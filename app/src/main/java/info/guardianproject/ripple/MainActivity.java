@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
@@ -112,15 +113,15 @@ public class MainActivity extends AppCompatActivity {
         respondersThatCanConnect = PanicTrigger.getRespondersThatCanConnect(this);
 
         // sort enabled first, then disabled
-        LinkedHashSet<String> a = new LinkedHashSet<String>(enabledResponders);
-        LinkedHashSet<String> b = new LinkedHashSet<String>(PanicTrigger.getAllResponders(this));
+        LinkedHashSet<String> a = new LinkedHashSet<>(enabledResponders);
+        LinkedHashSet<String> b = new LinkedHashSet<>(PanicTrigger.getAllResponders(this));
         b.removeAll(enabledResponders);
         a.addAll(b);
-        responders = a.toArray(new String[a.size()]);
+        responders = a.toArray(new String[0]);
 
         PackageManager pm = getPackageManager();
-        appLabelList = new ArrayList<CharSequence>(responders.length);
-        iconList = new ArrayList<Drawable>(responders.length);
+        appLabelList = new ArrayList<>(responders.length);
+        iconList = new ArrayList<>(responders.length);
         for (String packageName : responders) {
             try {
                 appLabelList.add(pm.getApplicationLabel(pm.getApplicationInfo(packageName, 0)));
@@ -135,13 +136,14 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true); // does not change, except in onResume()
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new RecyclerView.Adapter<AppRowHolder>() {
+            @NonNull
             @Override
-            public AppRowHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            public AppRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 return (new AppRowHolder(getLayoutInflater().inflate(R.layout.row, parent, false)));
             }
 
             @Override
-            public void onBindViewHolder(AppRowHolder holder, int position) {
+            public void onBindViewHolder(@NonNull AppRowHolder holder, int position) {
                 String packageName = responders[position];
                 boolean canConnect = respondersThatCanConnect.contains(packageName);
                 holder.setupForApp(
