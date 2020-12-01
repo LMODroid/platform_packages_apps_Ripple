@@ -20,5 +20,5 @@ android_app {
 
 java_import {
     name: "guardianproject-panic",
-    jars: ["panic-0.5.jar"],
+    jars: ["panic-1.0.jar"],
 }
