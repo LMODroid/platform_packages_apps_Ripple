@@ -14,7 +14,7 @@ release:
     - ./gradlew assembleRelease
   artifacts:
     paths:
-    - app/build/outputs/apk/*.apk
+    - app/build/outputs/apk/*/*.apk
 
 test:
   <<: *hugo-template
