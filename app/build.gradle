@@ -34,7 +34,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "info.guardianproject.ripple"
+        applicationId "org.calyxos.ripple"
         minSdkVersion 14
         targetSdkVersion 30
         versionCode getVersionCode()

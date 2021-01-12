@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/triggered"
-        tools:context="info.guardianproject.ripple.CountDownActivity">
+        tools:context="org.calyxos.ripple.CountDownActivity">
 
     <ImageView
             android:id="@+id/cancelButton"

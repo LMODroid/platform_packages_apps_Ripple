@@ -1,4 +1,4 @@
-package info.guardianproject.ripple;
+package org.calyxos.ripple;
 
 import android.content.Intent;
 import android.os.Build;

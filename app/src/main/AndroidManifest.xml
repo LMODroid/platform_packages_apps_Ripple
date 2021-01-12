@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="info.guardianproject.ripple">
+          package="org.calyxos.ripple">
+
+    <original-package android:name="info.guardianproject.ripple"/>
 
     <application
             tools:ignore="GoogleAppIndexingWarning"
@@ -25,7 +27,7 @@
                 tools:targetApi="jelly_bean">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value="info.guardianproject.ripple.MainActivity"/>
+                    android:value="org.calyxos.ripple.MainActivity"/>
         </activity>
         <activity
                 android:name=".CountDownActivity"

@@ -1,4 +1,4 @@
-package info.guardianproject.ripple;
+package org.calyxos.ripple;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;

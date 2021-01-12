@@ -1,4 +1,4 @@
-package info.guardianproject.ripple;
+package org.calyxos.ripple;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import android.widget.TextView;
 public class PanicActivity extends Activity implements OnTouchListener {
     public static final String TAG = "PanicActivity";
 
-    public static final String EXTRA_TEST_RUN = "info.guardianproject.ripple.extra.TEST_RUN";
+    public static final String EXTRA_TEST_RUN = "org.calyxos.ripple.extra.TEST_RUN";
 
     private int yMaxTranslation;
     private int yCurrentTranslation;

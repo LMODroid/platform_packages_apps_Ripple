@@ -1,4 +1,4 @@
-package info.guardianproject.ripple;
+package org.calyxos.ripple;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
