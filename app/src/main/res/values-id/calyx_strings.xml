@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="panic_tile_label">Pemicu panik</string>
+    <string name="settings_summary">Atur respons terhadap pemicu kepanikan darurat.</string>
+    <string name="settings_name">Pengaturan Panik</string>
+</resources>

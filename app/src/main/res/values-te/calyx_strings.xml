@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_summary">అత్యవసర ప్యానిక్ ట్రిగ్గర్ కు ప్రతిస్పందన ఏర్పాటు చేసుకోండి</string>
+    <string name="settings_name">ప్యానిక్ సెట్టింగ్స్</string>
+    <string name="panic_tile_label">ప్యానిక్ ట్రిగ్గర్</string>
+</resources>

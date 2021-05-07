@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="panic_tile_label">晃動觸發</string>
+    <string name="settings_summary">設置對緊急晃動觸發的回應。</string>
+    <string name="settings_name">晃動設定</string>
+</resources>

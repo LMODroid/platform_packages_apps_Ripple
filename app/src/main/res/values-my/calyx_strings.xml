@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="panic_tile_label">အရေးပေါ်ခလုတ်။</string>
+    <string name="settings_summary">အရေးပေါ်အခြေနေတွင်တုံ့ပြန်ရန်ခလုတ်.</string>
+    <string name="settings_name">ထိတ်လန့်ဖွယ်အနေအထားတွင် နှိပ်ရန်ဆက်တင်</string>
+</resources>
