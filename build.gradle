@@ -2,7 +2,7 @@ buildscript {
     repositories {
         maven { url 'file:///usr/share/maven-repo' }
         maven { url 'https://maven.google.com' }
-        jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
@@ -14,7 +14,7 @@ allprojects {
     repositories {
         maven { url 'file:///usr/share/maven-repo' }
         maven { url 'https://maven.google.com' }
-        jcenter()
+        mavenCentral()
         google()
     }
 }
