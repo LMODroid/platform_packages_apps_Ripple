@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_summary">緊急パニック トリガーに伴う反応を設定します。</string>
+    <string name="settings_name">パニック 設定</string>
+    <string name="panic_tile_label">パニック トリガー</string>
+</resources>
