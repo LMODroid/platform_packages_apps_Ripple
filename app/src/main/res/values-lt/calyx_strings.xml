@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_name">Panikos nustatymai</string>
+    <string name="panic_tile_label">Panikos paleidiklis</string>
+    <string name="settings_summary">Nustatykite atsaką į kritinės padėties panikos paleidiklį.</string>
+</resources>
