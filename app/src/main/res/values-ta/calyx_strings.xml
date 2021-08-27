@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_name">பீதி அமைப்புகள்</string>
+    <string name="settings_summary">அவசர பீதி தூண்டுதலுக்கான பதிலை அமைக்கவும்.</string>
+    <string name="panic_tile_label">பீதி தூண்டுதல்</string>
+</resources>

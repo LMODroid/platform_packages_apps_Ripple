@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_summary">അടിയന്തിര പരിഭ്രാന്തിക്കുള്ള പ്രതികരണം സജ്ജമാക്കുക.</string>
+    <string name="settings_name">പരിഭ്രാന്തി ക്രമീകരണങ്ങൾ</string>
+    <string name="panic_tile_label">പരിഭ്രാന്തി</string>
+</resources>

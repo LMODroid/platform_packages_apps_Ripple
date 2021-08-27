@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="panic_tile_label">Tlačidlo paniky</string>
+    <string name="settings_name">Nastavenia paniky</string>
+    <string name="settings_summary">Nastavte reakciu na núdzový spúšťač paniky.</string>
 </resources>
