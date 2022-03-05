@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_summary">Configura la resposta al activar un pànic d\'emergència.</string>
+    <string name="settings_name">Paràmetres de pànic</string>
+    <string name="panic_tile_label">Activadors de pànic</string>
+</resources>

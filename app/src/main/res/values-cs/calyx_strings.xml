@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="panic_tile_label">Talčítko paniky</string>
+    <string name="panic_tile_label">Tlačítko paniky</string>
     <string name="settings_name">Nastavení paniky</string>
+    <string name="settings_summary">Nastavte reakci na stisknutí tlačítka paniky.</string>
 </resources>
