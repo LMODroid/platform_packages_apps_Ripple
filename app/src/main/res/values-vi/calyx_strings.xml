@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_summary">Thiết lập phản ứng khi hoảng loạn khẩn cấp được kích hoạt.</string>
+    <string name="panic_tile_label">Kích hoạt hoảng loạn</string>
+    <string name="settings_name">Cài đặt kích hoạt hoảng loạn</string>
+</resources>
