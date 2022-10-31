@@ -2,5 +2,5 @@
 <resources>
     <string name="panic_tile_label">Panikauslöser</string>
     <string name="settings_name">Panik-Einstellungen</string>
-    <string name="settings_summary">Richten Sie die Reaktion auf einen Notfall-Panikauslöser ein.</string>
+    <string name="settings_summary">Richte die Reaktion auf einen Notfall-Panikauslöser ein.</string>
 </resources>
