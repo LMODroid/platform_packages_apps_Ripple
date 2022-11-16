@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_name">Paramètres de panique</string>
+    <string name="settings_summary">Configurez la réponse à un déclencheur de panique d\'urgence.</string>
+    <string name="panic_tile_label">Déclencheur de panique</string>
+</resources>
