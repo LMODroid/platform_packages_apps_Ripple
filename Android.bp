@@ -16,9 +16,21 @@ android_app {
         "com.google.android.material_material",
         "guardianproject-panic",
     ],
+
+    required: [
+        "default_perms_org.calyxos.ripple",
+    ],
 }
 
 java_import {
     name: "guardianproject-panic",
     jars: ["panic-1.0.jar"],
+}
+
+prebuilt_etc {
+    name: "default_perms_org.calyxos.ripple",
+    product_specific: true,
+    sub_dir: "default-permissions",
+    src: "default_perms_org.calyxos.ripple.xml",
+    filename_from_src: true,
 }

@@ -1,7 +1,12 @@
 package org.calyxos.ripple;
 
+import static org.calyxos.ripple.BootCompletedReceiver.PANIC_SHARED_PREFS;
+import static org.calyxos.ripple.BootCompletedReceiver.ONE_SHOT_MIGRATION_NOTIFICATION_KEY;
+
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
@@ -46,6 +51,16 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            if (bundle.getBoolean(BootCompletedReceiver.EXTRA_FROM_NOTIFICATION, false)) {
+                SharedPreferences panicPreferences =
+                        getSharedPreferences(PANIC_SHARED_PREFS, Context.MODE_PRIVATE);
+                panicPreferences.edit().putBoolean(ONE_SHOT_MIGRATION_NOTIFICATION_KEY, true)
+                        .apply();
+            }
+        }
     }
 
     @Override

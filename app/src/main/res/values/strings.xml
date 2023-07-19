@@ -19,4 +19,10 @@
     <string name="edit">Edit</string>
     <string name="got_it">Got it</string>
     <string name="app_hides">App hides when triggered</string>
+
+    <!-- Misc -->
+    <string name="panic_channel_title">General</string>
+    <string name="panic_channel_desc">Notifications regarding general actions &amp; recommendations</string>
+    <string name="discover_panic_title">Discover new Panic responder app</string>
+    <string name="discover_panic_desc">Configure apps to uninstall on panic in this new app. Previously configured via F-Droid.</string>
 </resources>
