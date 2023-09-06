@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="settings_name">ਪੈਨਿਕ ਸੈਟਿੰਗਾਂ</string>
+    <string name="settings_summary">ਐਮਰਜੈਂਸੀ ਪੈਨਿਕ ਟ੍ਰਿਗਰ ਲਈ ਜਵਾਬ ਸੈਟ ਅਪ ਕਰੋ।</string>
+</resources>
